@@ -1,0 +1,30 @@
+h1 {
+    color: red;
+    text-align: center;
+    font-weight: bolder;
+}
+h2 {
+    color: blue;
+    font-weight: bold;
+}
+article:not(:last-of-type) {
+    background-color: lightgray;
+}
+strong {
+    font-weight: normal;
+    color: yellowgreen;
+}
+em {
+    font-style: normal;
+    text-decoration: underline;
+    font-size: 1.5em;
+    color: orange;
+}
+article:last-of-type {
+    background-color: pink;
+}
+:nth-of-type(2) h2{
+    color: green;
+    text-align: right;
+    text-decoration: underline;
+}
