@@ -4,3 +4,12 @@ table, td, th{
     border-width: 2px;
     border-collapse: collapse;
 }
+
+/* correction
+table{
+    border-collapse: collapse;
+}
+td,th{
+    border:2px black solid;
+    text-align: center;
+}*/
