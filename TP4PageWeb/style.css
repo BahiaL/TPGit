@@ -1,44 +1,112 @@
 body{
     background-image: radial-gradient( #CCDAE0, #EDF2F4 );
 }
+
 header{
     text-align: center;
 }
+
 h1{
     color: #EF233C;
     font-size: xx-large;
     font-weight: bold;
     font-style: impact;
 }
+
 h3{
     color: #2B2D42;
     font-size: x-large;
     font-weight: bold;
     text-decoration: underline dashed;
 }
+
 article{
     border: 1px solid black;
 }
+
 img{
     display: block;
     margin: auto; 
     border: 2px solid  #8D99AE;   
 }
+
 footer{
     text-align: right;
 }
+
 ul{
     list-style-type: none;
 }
+
 a{
   color: #D90429;  
 }
+
 a:visited{
     color: grey;
 }
+
 a:hover{
     color: #2B2D42;
 }
+
 span{
     color: red;
 }
+
+/* carrousel --------------------------*/
+
+.carousel {
+    margin: 0 auto;
+    overflow: hidden;
+    text-align: center;
+  }
+  
+  .slides {
+    display: flex;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+  }
+  
+  .slides-item {
+    align-items: center;
+    border-radius: 10px;
+    display: flex;
+    flex-shrink: 0;
+    font-size: 100px;
+    height: 600px;
+    justify-content: center;
+    margin: 0 1rem;
+    position: relative;
+    scroll-snap-align: start;
+    transform: scale(1);
+    transform-origin: center center;
+    transition: transform .5s;
+    width: 100%;
+  }
+  
+  .carousel-nav {
+    padding: 1.25rem .5rem;
+  }
+  
+  .slider-nav {
+    align-items: center;
+    background-color: rgb(102, 99, 99);
+    border-radius: 50%;
+    color: #000;
+    display: inline-flex;
+    height: 1px;
+    width: 1px;
+    justify-content: center;
+    padding: 5px;
+    position: relative;
+    text-decoration: none;
+    
+  }
+
+  .slides::-webkit-scrollbar {
+    display: none;
+  }
+  
+  
