@@ -5,6 +5,8 @@
     width: 100px;
     height: 100px;
     margin: 20px;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 .dot{
@@ -13,27 +15,15 @@
     border: 1px red solid;
     background-color: red;
     border-radius: 10px;
-}
-
-#d1, #d2, #d3{
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-}
-
-#d4, #d5, #d6{
-    display: flex;    
-    justify-content: space-evenly;
-    
-}
-
-#d4>div, #d5>div, #d6>div{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    align-self: center;
 }
 
-#d5 :nth-child(2){
+.dice >*{
     display: flex;
-    align-self: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
 }
