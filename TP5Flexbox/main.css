@@ -5,6 +5,8 @@
     width: 100px;
     height: 100px;
     margin: 20px;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 .dot{
@@ -15,16 +17,8 @@
     border-radius: 10px;
 }
 
-#d1, #d2, #d3{
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-}
-
-#d4, #d5, #d6{
-    display: flex;    
-    justify-content: space-evenly;
-    
+#d1, #d2, #d3{    
+    align-items: center;    
 }
 
 #d4>div, #d5>div, #d6>div{
